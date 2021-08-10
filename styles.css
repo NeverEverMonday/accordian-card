@@ -1,0 +1,32 @@
+/* Page Styles */
+
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  margin: 0 0;
+}
+
+h1 {
+  position: relative;
+  align-self: center;
+}
+/* class styling */
+.master-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 90%;
+  height: 70%;
+  justify-content: center;
+  align-self: center;
+  position: fixed;
+}
+
+.question {
+  width: 100%;
+}

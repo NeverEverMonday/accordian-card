@@ -1,32 +1,49 @@
 /* Page Styles */
+* {
+  box-sizing: border-box;
+}
 
 body {
-  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   margin: 0 0;
+  font-size: 12px;
 }
 
 h1 {
-  position: relative;
-  align-self: center;
+  width: 100%;
+  text-align: center;
+  align-self: flex-end;
 }
 /* class styling */
 .master-container {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   display: flex;
   height: 100vh;
   justify-content: center;
+  align-items: center;
 }
 
 .faq-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: white;
+  height: 80%;
   width: 90%;
-  height: 70%;
-  justify-content: center;
+  margin-top: 15%;
+  justify-content: space-around;
   align-self: center;
   position: fixed;
+  border-radius: 20px 20px;
+}
+
+.question-container {
+  width: 100%;
+  text-align:justify;
+  align-self: flex-start;
+  padding: 5px 20px;
 }
 
 .question {
-  width: 100%;
+  width: 90%;
+  border-bottom: 1px solid lightgrey;
 }

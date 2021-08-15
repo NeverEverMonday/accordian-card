@@ -74,3 +74,11 @@ h3 {
 .chevron {
 margin-left: auto;
 }
+
+.answer {
+  display: none;
+}
+
+.show {
+  display: block;
+}

@@ -11,6 +11,13 @@ body {
   font-size: 12px;
 }
 
+h2 {
+  text-align: center;
+  font-size: 35px;
+  font-family: arial;
+  font-weight: bold;
+}
+
 h3 {
   color: hsl(238, 29%, 16%);
 }
@@ -37,7 +44,7 @@ h3 {
   border-radius: 20px 20px;
 }
 
-.faq {
+/* .faq {
   width: 100%;
   text-align: center;
   align-self: flex-end;
@@ -46,28 +53,30 @@ h3 {
   padding: 0 0 20px 0;
   font-family: arial;
   font-weight: bold;
-}
+} */
 
 .question-container {
   width: 100%;
   text-align:justify;
-  align-self: flex-start;
-  padding: 5px 20px;
+  padding: 5px 5px;
 }
 
 .question {
   display: flex;
-  width: 90%;
+  width: 100%;
   border-bottom: 1px solid lightgrey;
   align-items: center;
   font-family: "Kumbh+Sans:wght@700";
 }
 
+.answer {
+  width: 90%;
+  justify-content: center;
+}
+
 .woman {
-  position: relative;
   margin-top: -135px;
   filter: drop-shadow(0 30px 0 hsl(240, 5%, 91%));
-  margin-bottom: 0px;
 
 }
 
@@ -81,4 +90,24 @@ margin-left: auto;
 
 .show {
   display: block;
+}
+
+@media screen and (min-width: 700px) {
+
+
+  .woman {
+    width: 50%;
+    align-self: center;
+    margin-left: -15%;
+  }
+
+  .question-container {
+    height: 100%;
+    width: 50%;
+  }
+
+  /* .faq {
+    width: 33%;
+    height: 30%;
+  } */
 }
